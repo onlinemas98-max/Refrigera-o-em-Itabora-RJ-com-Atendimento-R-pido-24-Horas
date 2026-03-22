@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Refrigeração em Itaboraí RJ | Atendimento Rápido 24h</title>
+    <meta id="page-description" name="description" content="Refrigeração em Itaboraí RJ com atendimento rápido 24h. Conserto de ar-condicionado, geladeira e freezer. Técnico perto de você. Ligue agora!">
+    
+    <!-- ESTRATÉGIA SEO: Meta Tags e Estrutura Semântica -->
+    <meta name="keywords" content="refrigeração em Itaboraí, conserto de ar condicionado Itaboraí, conserto de geladeira Itaboraí, técnico de refrigeração perto de mim, refrigeração 24h Itaboraí, manutenção de ar condicionado Itaboraí RJ">
+    <meta name="author" content="Refrigeração Itaboraí">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        /* DESIGN: Cores azul, branco e cinza */
+        :root {
+            --primary: #004a99;
+            --primary-dark: #003366;
+            --secondary: #f4f7f6;
+            --accent: #ffcc00;
+            --text-dark: #2c3e50;
+            --text-light: #5d6d7e;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+            --gray-border: #d5dbdb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        .page-content {
+            display: none;
+            animation: slideIn 0.4s ease-out;
+        }
+
+        .page-content.active {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            color: var(--primary-dark);
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px 0;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: var(--text-light);
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--primary-dark);
+        }
+
+        ul {
+            margin-bottom: 25px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--text-light);
+        }
+
+        .cta-section {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0,74,153,0.2);
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            border-bottom: none;
+            margin-top: 0;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 5px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .faq-item {
+            background-color: var(--secondary);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--gray-border);
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            color: var(--primary-dark);
+        }
+
+        .internal-nav {
+            background: var(--secondary);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .internal-nav a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            margin: 0 15px;
+            display: inline-block;
+            border-bottom: 2px dotted var(--primary);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 60px 0 30px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .nav-links {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                justify-content: space-around;
+                padding: 12px 0;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            }
+            .nav-links li { margin: 0; }
+            .nav-links a { font-size: 0.8rem; }
+            main { padding-bottom: 80px; }
+            .whatsapp-float { bottom: 85px; right: 20px; width: 55px; height: 55px; font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" onclick="navigateTo('home')">Refrigeração Itaboraí</div>
+                <ul class="nav-links">
+                    <li><a onclick="navigateTo('home')" id="link-home" class="active">Home</a></li>
+                    <li><a onclick="navigateTo('ar')" id="link-ar">Ar-Condicionado</a></li>
+                    <li><a onclick="navigateTo('geladeira')" id="link-geladeira">Geladeira</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- ==================================================
+             PÁGINA 1: HOME (index.html)
+             ================================================== -->
+        <section id="page-home" class="page-content active">
+            <article>
+                <h1>Refrigeração em Itaboraí RJ com Atendimento Rápido 24 Horas</h1>
+                
+                <p>Se você está em busca de um serviço de excelência em <strong>refrigeração em Itaboraí RJ</strong>, saiba que a nossa equipe está pronta para oferecer o suporte técnico mais completo da região. A refrigeração é um pilar fundamental para o conforto da nossa casa e para a viabilidade de muitos negócios, especialmente em uma cidade com o clima tropical e as altas temperaturas que enfrentamos aqui no Rio de Janeiro. Quando um equipamento de refrigeração falha, o tempo é o nosso maior inimigo. Por isso, consolidamos uma estrutura de <strong>atendimento rápido 24 horas</strong>, focada em resolver o seu problema com a máxima agilidade e eficiência.</p>
+
+                <p>Nossa empresa nasceu da necessidade de oferecer um <strong>serviço local</strong> que realmente entenda as demandas dos moradores de Itaboraí. Sabemos que a confiança é construída através de resultados, e é por isso que cada <strong>técnico perto de você</strong> em nossa equipe é rigorosamente treinado para lidar com as mais diversas tecnologias, desde os modelos mais antigos até os sistemas Inverter mais modernos. Seja para a sua residência, para o seu pequeno comércio ou para grandes indústrias, a nossa promessa é uma só: rapidez, transparência no orçamento e a garantia de que o seu aparelho voltará a funcionar como novo. Atendemos com prontidão em toda a cidade, levando soluções que realmente funcionam para quem não pode esperar.</p>
+
+                <p>Acreditamos que um bom serviço de refrigeração não se limita apenas ao conserto. Ele envolve consultoria, manutenção preventiva e um suporte que coloca o cliente em primeiro lugar. Em Itaboraí, somos reconhecidos pela pontualidade e pela capacidade de resolver problemas complexos onde outros falharam. Se você precisa de um profissional agora, não hesite em nos contatar. Estamos a poucos minutos de distância de você, prontos para restaurar o seu conforto e a segurança dos seus alimentos e produtos. Nossa equipe entende que a refrigeração é vital, e por isso tratamos cada chamado com a urgência que ele merece.</p>
+
+                <p>Além disso, nossa empresa se orgulha de ser uma referência em <strong>atendimento rápido em Itaboraí RJ</strong>. Temos veículos equipados com as peças mais comuns para que o reparo seja feito na hora, sem a necessidade de múltiplas visitas. Isso economiza o seu tempo e o seu dinheiro. Quando você procura por um técnico, você quer alguém que resolva, e é exatamente isso que entregamos. A nossa história em Itaboraí é marcada por milhares de clientes satisfeitos que hoje desfrutam de ambientes climatizados e equipamentos funcionando perfeitamente graças ao nosso trabalho dedicado.</p>
+
+                <h2>Refrigeração Perto de Mim em Itaboraí</h2>
+                <p>A busca por <strong>refrigeração perto de mim</strong> em Itaboraí termina aqui. A localização estratégica de nossa base técnica permite que cubramos todos os distritos da cidade com uma velocidade impressionante. Entendemos que, em casos de geladeiras paradas ou ar-condicionados com defeito em dias de calor extremo, a espera de horas ou dias é simplesmente inaceitável. Por isso, otimizamos nossa logística para que o deslocamento seja mínimo, garantindo que o técnico chegue à sua porta no menor intervalo possível. Não importa se você está no centro ou nos bairros mais afastados, nossa equipe está sempre em movimento para te atender.</p>
+                <p>Estar "perto de você" significa mais do que apenas distância física; significa estar disponível quando você mais precisa. Nosso sistema de plantão 24h foi desenhado para que nenhum morador de Itaboraí fique desamparado. Seja de madrugada, em feriados ou finais de semana, a nossa equipe de prontidão está equipada com ferramentas de ponta e peças de reposição originais para efetuar o reparo no local, evitando remoções desnecessárias que encarecem o serviço e aumentam o tempo de espera. A rapidez é o nosso compromisso com a sua tranquilidade.</p>
+                <p>Além da agilidade, ser um serviço local em Itaboraí nos permite oferecer um preço muito mais competitivo. Como não temos grandes deslocamentos entre cidades vizinhas, conseguimos repassar essa economia para o cliente final. Isso torna o nosso serviço de <strong>refrigeração em Itaboraí RJ</strong> não apenas o mais rápido, mas também o de melhor custo-benefício. Valorizamos a economia local e trabalhamos para fortalecer a confiança da nossa comunidade em serviços de qualidade feitos por quem mora e trabalha na região.</p>
+
+                <h2>Técnico de Refrigeração em Itaboraí RJ</h2>
+                <p>O <strong>técnico de refrigeração em Itaboraí RJ</strong> que enviamos à sua casa é um profissional certificado, com anos de experiência prática no campo. O setor de refrigeração evoluiu drasticamente nos últimos anos, com a introdução de gases ecológicos e placas eletrônicas complexas. Nossos técnicos não são apenas "trocadores de peças"; eles são diagnosticadores precisos que buscam a raiz do problema para evitar que o defeito retorne em poucos meses. O conhecimento técnico é o que garante que o seu investimento em reparo seja duradouro e seguro.</p>
+                <p>O profissionalismo e a confiança são os pilares que sustentam nossa reputação em Itaboraí. Ao contratar nossos serviços, você tem a certeza de um atendimento ético, onde o valor cobrado é justo e reflete a qualidade do trabalho executado. Além disso, prezamos pela limpeza e organização durante o serviço, respeitando o seu ambiente doméstico ou comercial. A nossa vasta experiência nos permite trabalhar com todas as grandes marcas do mercado, como Brastemp, Consul, Electrolux, Samsung, LG, Carrier e muitas outras. Cada técnico carrega consigo o compromisso de excelência da nossa marca.</p>
+                <p>Entendemos que deixar um estranho entrar em sua casa exige confiança. Por isso, todos os nossos colaboradores são devidamente identificados e passam por verificações rigorosas de antecedentes e conduta. Queremos que você se sinta seguro ao abrir as portas para o nosso <strong>técnico de refrigeração em Itaboraí</strong>. A transparência é total: explicamos o defeito, mostramos a peça danificada e só iniciamos o trabalho após a sua total aprovação do orçamento. Sem surpresas negativas, apenas um serviço bem feito.</p>
+
+                <h2>Problemas Comuns de Refrigeração</h2>
+                <p>Muitas vezes, os aparelhos dão sinais antes de pararem totalmente. Identificar esses sintomas pode salvar o seu equipamento de uma quebra total. Entre os problemas mais frequentes que resolvemos em Itaboraí, destacam-se o ar-condicionado que parou de gelar, a geladeira que faz barulhos estranhos ou o freezer que está acumulando gelo excessivo. Esses sinais indicam que algo não vai bem no sistema de <a href="https://pt.wikipedia.org/wiki/Refrigeração" rel="nofollow" target="_blank">refrigeração</a> e que a intervenção de um profissional é necessária imediatamente.</p>
+                <ul>
+                    <li><strong>Aparelho não gela o suficiente:</strong> Pode indicar vazamento de gás, filtros sujos ou compressor cansado.</li>
+                    <li><strong>Vazamentos de água:</strong> Comum em ar-condicionados devido a drenos entupidos ou má instalação.</li>
+                    <li><strong>Barulhos excessivos:</strong> Podem ser causados por ventoinhas desbalanceadas ou problemas no motor.</li>
+                    <li><strong>Aumento repentino na conta de luz:</strong> Muitas vezes causado por aparelhos que não desligam devido a sensores defeituosos.</li>
+                    <li><strong>Cheiro de queimado ou estalos:</strong> Sinais críticos de problemas elétricos que exigem desligamento imediato.</li>
+                    <li><strong>Gelo na tubulação externa:</strong> Indica falta de gás ou obstrução severa no fluxo de ar.</li>
+                </ul>
+                <p>Ignorar esses avisos pode levar à queima do compressor, que é a peça mais cara do sistema. Por isso, ao notar qualquer comportamento fora do comum, chame o nosso <strong>atendimento rápido 24h</strong>. Uma pequena manutenção hoje evita uma grande despesa amanhã. Estamos prontos para realizar diagnósticos precisos e reparos que devolvem a eficiência original ao seu equipamento, garantindo que ele funcione de forma econômica e silenciosa por muito mais tempo.</p>
+
+                <h2>Nossos Serviços de Refrigeração em Itaboraí</h2>
+                <p>Oferecemos um leque completo de soluções para garantir que a temperatura do seu ambiente e dos seus produtos esteja sempre sob controle. Nossos serviços incluem desde a instalação inicial até a manutenção corretiva mais complexa. Em Itaboraí, somos a solução única para tudo o que envolve frio e climatização. Veja abaixo como podemos te ajudar:</p>
+                <ul>
+                    <li><strong>Conserto e Manutenção de Ar-Condicionado:</strong> Especialistas em Split, Janela e Sistemas Centrais. Saiba mais na nossa seção de <a onclick="navigateTo('ar')">ar-condicionado</a>.</li>
+                    <li><strong>Assistência Técnica de Geladeiras:</strong> Reparo de modelos Frost Free, Side by Side e convencionais. Veja detalhes em <a onclick="navigateTo('geladeira')">geladeiras</a>.</li>
+                    <li><strong>Reparo de Freezers e Balcões Frigoríficos:</strong> Essencial para o comércio local de Itaboraí, garantindo a conservação de mercadorias.</li>
+                    <li><strong>Instalação Profissional:</strong> Garantimos que o seu aparelho novo seja instalado conforme as normas do fabricante, preservando a garantia.</li>
+                    <li><strong>Limpeza Química e Higienização:</strong> Eliminação de fungos e bactérias para um ar mais saudável e economia de energia.</li>
+                    <li><strong>Recarga de Gás:</strong> Reposição de fluidos refrigerantes seguindo padrões ecológicos e de segurança.</li>
+                </ul>
+                <p>Cada serviço é executado com o máximo de rigor técnico. Não fazemos apenas o conserto; fazemos a revisão completa do sistema para garantir que outras peças não sejam afetadas pelo defeito original. Esse olhar holístico sobre o equipamento é o que nos diferencia em Itaboraí. Queremos que você esqueça que teve um problema de refrigeração, focando apenas no conforto que o seu aparelho proporciona.</p>
+
+                <h2>Atendemos em Itaboraí e Região</h2>
+                <p>Nossa cobertura é total em Itaboraí. Se você reside ou trabalha em bairros como <strong>Centro, Manilha, Venda das Pedras, Porto das Caixas, Joaquim de Oliveira, Apollo ou Visconde</strong>, saiba que temos uma unidade móvel sempre por perto. A nossa familiaridade com a geografia da cidade nos permite evitar congestionamentos e chegar até você por rotas alternativas, reforçando o nosso compromisso com o <strong>atendimento rápido</strong>. Não importa a distância, se é em Itaboraí, nós chegamos lá.</p>
+                <p>Além de Itaboraí, atendemos as regiões limítrofes, sempre mantendo o padrão de qualidade que nos tornou conhecidos. O nosso objetivo é ser o <strong>técnico de refrigeração perto de você</strong> em qualquer situação. Se você possui um comércio em Manilha ou uma residência em Venda das Pedras, a nossa equipe conhece os desafios locais e está pronta para oferecer a melhor solução técnica. A nossa rede de atendimento é vasta e eficiente, pensada para que nenhum cliente fique esperando mais do que o necessário.</p>
+
+                <div class="cta-section">
+                    <h2>Precisa de Refrigeração em Itaboraí?</h2>
+                    <p>Não deixe o seu problema para depois. O calor não espera e a sua comida pode estragar. Fale agora com um especialista e tenha um técnico na sua porta em minutos!</p>
+                    <a href="https://wa.me/5521999999999" class="btn-whatsapp">Chamar no WhatsApp Agora</a>
+                </div>
+
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>Qual o valor da visita técnica em Itaboraí?</h3>
+                        <p>Nossa taxa de visita é simbólica e serve para cobrir os custos de deslocamento do técnico. O mais importante: se você aprovar o orçamento e realizar o serviço conosco, a taxa de visita é totalmente gratuita! Prezamos pela transparência e pelo preço justo em Itaboraí.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Vocês atendem emergências de madrugada?</h3>
+                        <p>Sim! Nosso <strong>atendimento 24h</strong> serve justamente para aquelas situações críticas que não podem esperar o dia seguinte, como freezers de restaurantes ou ar-condicionados em quartos de crianças e idosos. Estamos de plantão agora mesmo.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>O serviço tem garantia?</h3>
+                        <p>Com certeza. Todos os nossos serviços e peças instaladas possuem garantia formalizada em nota, variando de 90 dias a 1 ano conforme o fabricante. A sua tranquilidade pós-reparo é a base do nosso negócio em Itaboraí.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quais marcas de geladeira vocês consertam?</h3>
+                        <p>Atendemos todas as marcas líderes como Brastemp, Electrolux, Consul, Samsung, LG e Continental. Nossos técnicos possuem manuais de serviço de quase todos os modelos do mercado para garantir um reparo preciso.</p>
+                    </div>
+                </div>
+
+                <div class="internal-nav">
+                    <p>Conheça nossos serviços específicos:</p>
+                    <a onclick="navigateTo('ar')">Conserto de Ar-Condicionado em Itaboraí</a>
+                    <a onclick="navigateTo('geladeira')">Conserto de Geladeira em Itaboraí</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- ==================================================
+             PÁGINA 2: AR-CONDICIONADO (ar-condicionado.html)
+             ================================================== -->
+        <section id="page-ar" class="page-content">
+            <article>
+                <h1>Conserto de Ar-Condicionado em Itaboraí RJ</h1>
+                
+                <p>O ar-condicionado deixou de ser um luxo para se tornar uma necessidade vital em Itaboraí. Com as temperaturas frequentemente ultrapassando os 35 graus, um ambiente sem climatização torna-se insuportável para o convívio e para o trabalho. Se o seu aparelho parou de funcionar, está "pingando" ou simplesmente não gela como antes, você precisa de um serviço especializado de <strong>conserto de ar-condicionado em Itaboraí RJ</strong>. Nossa equipe técnica é treinada para diagnosticar e resolver falhas em tempo recorde, devolvendo o frescor ao seu lar ou escritório com a agilidade que o clima da nossa região exige.</p>
+
+                <p>Muitos problemas de climatização são causados pela <strong>falta de manutenção</strong> ou por instalações mal executadas. Um ar-condicionado que não recebe limpeza periódica acumula poeira e microrganismos que forçam o motor, aumentam o consumo de energia em até 40% e podem causar doenças respiratórias graves. Nós oferecemos um serviço de higienização profunda que remove toda a sujeira interna, garantindo um ar puro e um aparelho muito mais eficiente e econômico. Em Itaboraí, somos a referência quando o assunto é prolongar a vida útil do seu Split ou Janela através de cuidados profissionais.</p>
+
+                <p>Nosso <strong>atendimento 24h</strong> é o diferencial que você precisa. Sabemos que o ar-condicionado costuma falhar justamente nos momentos de maior uso, como noites quentes ou durante o horário comercial. Por isso, mantemos equipes de prontidão em Itaboraí para realizar reparos de emergência, recarga de gás (R22, R410a), troca de capacitores, reparo em placas eletrônicas e substituição de compressores. Não sofra com o calor; chame quem entende de verdade de climatização e oferece um <strong>atendimento rápido</strong> em qualquer bairro da cidade. A sua satisfação é o nosso maior objetivo.</p>
+
+                <p>Além do conserto, focamos muito na educação do cliente. Explicamos por que o defeito ocorreu e como você pode evitar que ele aconteça novamente. Muitas vezes, pequenos hábitos no uso do controle remoto ou na limpeza dos filtros externos podem salvar o seu aparelho de manutenções caras. Em Itaboraí, queremos ser mais do que apenas o seu técnico; queremos ser o seu parceiro na manutenção do conforto da sua casa. A confiança que conquistamos ao longo dos anos é fruto dessa transparência e dedicação total ao cliente.</p>
+
+                <h2>Manutenção de Ar-Condicionado em Itaboraí</h2>
+                <p>A manutenção preventiva é o segredo para evitar gastos inesperados. Realizar uma revisão semestral no seu aparelho garante que pequenas falhas não se transformem em grandes prejuízos. Durante a nossa visita de manutenção em Itaboraí, verificamos a pressão do gás, o estado dos isolamentos térmicos, a limpeza das serpentinas e o funcionamento dos drenos. Esse cuidado meticuloso evita vazamentos de água e garante que o seu aparelho opere sempre na temperatura ideal, sem forçar os componentes internos. Um ar-condicionado bem mantido é sinônimo de economia na conta de luz e ar saudável para sua família.</p>
+                <p>Muitos moradores de Itaboraí ignoram a manutenção até que o aparelho pare de gelar. No entanto, o custo de uma manutenção preventiva é infinitamente menor do que o de um conserto corretivo. Além disso, a manutenção garante que o aparelho funcione de forma silenciosa, algo essencial para uma boa noite de sono. Nossa equipe utiliza produtos específicos para a limpeza das serpentinas que não agridem o alumínio, preservando a capacidade de troca de calor do equipamento por muito mais tempo. Invista na prevenção e durma tranquilo.</p>
+                <p>Para empresas em Itaboraí, oferecemos planos de manutenção (PMOC) que garantem a conformidade com as leis de saúde e garantem que os funcionários trabalhem em um ambiente saudável. Um sistema de ar-condicionado sujo em um escritório pode aumentar o número de faltas por doenças respiratórias. Nossa manutenção corporativa é rápida e discreta, agendada para horários que não atrapalhem a produtividade do seu negócio. Cuide do seu patrimônio e da saúde de quem trabalha com você.</p>
+
+                <h2>Instalação de Ar-Condicionado Split</h2>
+                <p>Comprou um ar-condicionado novo? A instalação é a fase mais crítica. Uma instalação mal feita pode anular a garantia do fabricante e causar problemas crônicos de performance. Nossa equipe de <strong>instalação em Itaboraí</strong> segue rigorosamente as normas técnicas (ABNT), utilizando materiais de primeira linha, como tubulação de cobre e isolamento blindado. Realizamos o processo de vácuo obrigatório, que remove a umidade do sistema, garantindo que o seu Split funcione com 100% de sua capacidade desde o primeiro dia. Não confie o seu aparelho novo a amadores; a instalação correta é o que define se o seu ar-condicionado vai durar 2 ou 10 anos.</p>
+                <p>Em Itaboraí, as condições climáticas exigem que a unidade externa (condensadora) seja instalada em local com boa circulação de ar e protegida de corrosão excessiva. Nossos técnicos avaliam o melhor local para garantir o máximo rendimento. Também cuidamos da parte elétrica, instalando disjuntores adequados para evitar sobrecargas na rede da sua casa. Uma instalação profissional é um investimento em segurança e performance. Entregamos o serviço completo, com acabamento impecável e testes de funcionamento na frente do cliente.</p>
+
+                <h2>Limpeza e Higienização de Ar</h2>
+                <p>A saúde da sua família depende da limpeza do seu ar-condicionado. Em Itaboraí, o ar pode ser carregado de poeira e poluição, que ficam retidos nos filtros e na evaporadora. Nossa higienização utiliza produtos bactericidas específicos que eliminam ácaros, fungos e bactérias, além de remover o mau cheiro. Um aparelho limpo gela mais rápido e faz menos barulho, proporcionando um ambiente muito mais agradável para o seu descanso. A limpeza técnica que realizamos desmonta o aparelho para alcançar lugares que a limpeza comum não chega, garantindo uma desinfecção total.</p>
+                <p>Recomendamos a higienização completa pelo menos uma vez ao ano para residências e a cada seis meses para comércios em Itaboraí. Além da saúde, a limpeza impacta diretamente no seu bolso. Um ar-condicionado sujo precisa trabalhar muito mais para atingir a temperatura desejada, o que reflete imediatamente no aumento da conta de energia. Ao realizar a limpeza conosco, você notará que o aparelho gela muito mais rápido e opera de forma muito mais suave. É o serviço de <strong>refrigeração em Itaboraí RJ</strong> que cuida de você e da sua economia.</p>
+
+                <h2>Atendimento Rápido em Itaboraí</h2>
+                <p>A agilidade é a nossa marca registrada. Quando você solicita um técnico para <strong>ar-condicionado em Itaboraí</strong>, nossa central aciona a unidade móvel mais próxima. Entendemos a urgência de um ambiente climatizado, especialmente para idosos, crianças ou em ambientes de trabalho. Nosso compromisso é com a solução imediata, com transparência e honestidade em cada etapa do processo. Temos técnicos circulando por Manilha, Venda das Pedras e Centro, garantindo que o tempo de espera seja o menor da região.</p>
+                <p>O nosso <strong>atendimento rápido</strong> não significa pressa no serviço, mas sim eficiência na logística. Cada técnico leva consigo um kit completo de ferramentas e as peças mais solicitadas para reparos de ar-condicionado. Isso nos permite resolver 90% dos casos na primeira visita. Em Itaboraí, somos conhecidos por não deixar o cliente "na mão". Se o seu ar parou agora, saiba que a solução está a caminho. A nossa dedicação é total para que você volte a ter o conforto que merece o quanto antes.</p>
+
+                <div class="cta-section">
+                    <h2>Seu Ar-Condicionado Parou?</h2>
+                    <p>Não passe calor! Temos técnicos de plantão agora em Itaboraí prontos para te atender. Orçamento sem compromisso via WhatsApp e atendimento em até 60 minutos!</p>
+                    <a href="https://wa.me/5521999999999" class="btn-whatsapp">Falar com Técnico Agora</a>
+                </div>
+
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>Por que meu ar-condicionado está gelando pouco?</h3>
+                        <p>Isso pode ser causado por filtros sujos, vazamento de gás ou obstrução na unidade externa. Em Itaboraí, o calor extremo exige que o aparelho esteja 100% limpo para trocar calor eficientemente. Uma revisão técnica pode identificar a causa exata rapidamente e evitar que o compressor queime por esforço excessivo.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>O que é a tecnologia Inverter?</h3>
+                        <p>Aparelhos Inverter são muito mais econômicos pois o compressor nunca desliga totalmente, apenas ajusta a velocidade conforme a necessidade. Isso evita picos de energia. Nós somos especialistas no conserto desses modelos em Itaboraí, que exigem técnicos qualificados para lidar com as placas eletrônicas sensíveis.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quanto tempo dura uma instalação?</h3>
+                        <p>Uma instalação padrão de Split leva em média de 3 a 5 horas, dependendo da complexidade do local e da distância entre as unidades. Em Itaboraí, priorizamos instalações seguras que seguem todas as normas de vácuo e vedação para garantir a longevidade do seu aparelho.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Vocês fazem recarga de gás?</h3>
+                        <p>Sim! Realizamos a recarga de gás em Itaboraí para todos os tipos de fluidos (R22, R410a). Mas atenção: sempre buscamos o vazamento antes de completar o gás, pois o gás não "acaba", ele vaza. Corrigir o furo é essencial para o reparo ser definitivo.</p>
+                    </div>
+                </div>
+
+                <div class="internal-nav">
+                    <p>Navegue pelo site:</p>
+                    <a onclick="navigateTo('home')">Página Inicial</a>
+                    <a onclick="navigateTo('geladeira')">Conserto de Geladeira em Itaboraí</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- ==================================================
+             PÁGINA 3: GELADEIRA (geladeira.html)
+             ================================================== -->
+        <section id="page-geladeira" class="page-content">
+            <article>
+                <h1>Conserto de Geladeira e Freezer em Itaboraí RJ</h1>
+                
+                <p>Uma geladeira parada é uma das maiores emergências domésticas que alguém pode enfrentar. Em Itaboraí, com o calor intenso, os alimentos podem começar a estragar em pouquíssimas horas, gerando prejuízo financeiro e transtorno para a família. Se a sua <strong>geladeira não está gelando</strong>, o freezer está acumulando gelo excessivo ou o motor simplesmente não liga, você precisa de um <strong>técnico de geladeira em Itaboraí</strong> que atenda com urgência. Nossa assistência técnica é especializada em resolver falhas críticas de refrigeração doméstica e comercial no menor tempo possível, garantindo a segurança dos seus alimentos.</p>
+
+                <p>Trabalhamos com todas as tecnologias de refrigeração, incluindo os sistemas <strong>Frost Free, Cycle Defrost, Side by Side e Inverter</strong>. Sabemos que uma geladeira moderna é um equipamento eletrônico complexo, e por isso nossos técnicos em Itaboraí são constantemente atualizados para lidar com placas de controle, sensores de temperatura e compressores de alta eficiência. Não arrisque o seu patrimônio com curiosos; contrate um serviço profissional que oferece garantia e utiliza peças originais para assegurar que o problema não retorne. A nossa experiência em Itaboraí nos permite diagnosticar defeitos que outros técnicos muitas vezes ignoram.</p>
+
+                <p>Nosso <strong>atendimento rápido</strong> cobre toda a cidade de Itaboraí. Entendemos que você não pode esperar dias por uma visita quando tem uma geladeira cheia de compras. Por isso, mantemos um estoque de peças de reposição das marcas mais populares, como Brastemp, Electrolux, Consul, Samsung e LG, permitindo que o reparo seja concluído, na maioria das vezes, já na primeira visita. Se o seu freezer ou geladeira deu defeito, a solução está a apenas uma mensagem de distância. Atendemos 24h para garantir que você não perca suas compras do mês e tenha sua rotina normalizada o quanto antes.</p>
+
+                <p>Além do conserto, oferecemos consultoria sobre como organizar melhor sua geladeira para otimizar o consumo de energia. Muitas vezes, a forma como os alimentos são dispostos ou o estado das borrachas de vedação impactam diretamente na conta de luz. Em Itaboraí, somos conhecidos por essa atenção aos detalhes. Queremos que sua geladeira funcione bem e gaste pouco. A nossa missão é ser a sua primeira escolha sempre que precisar de <strong>refrigeração em Itaboraí RJ</strong>, oferecendo um serviço que combina competência técnica com um atendimento humano e atencioso.</p>
+
+                <h2>Manutenção de Geladeira</h2>
+                <p>A manutenção preventiva de geladeiras é frequentemente negligenciada, mas é essencial para evitar quebras repentinas. Em Itaboraí, a poeira e a maresia podem acelerar a corrosão de tubulações e o acúmulo de sujeira no condensador, fazendo com que o motor trabalhe muito mais do que o necessário. Nossa revisão técnica inclui a limpeza do sistema, verificação da borracha de vedação (gaxeta) e teste dos componentes elétricos. Uma geladeira bem cuidada consome menos energia e dura muito mais anos. Não espere ela parar de gelar para chamar um profissional; a prevenção é sempre o melhor caminho para o seu bolso.</p>
+                <p>Durante a manutenção, nossos técnicos verificam o sistema de degelo, que é a causa de 70% dos problemas em geladeiras Frost Free. Se o dreno estiver entupido ou a resistência queimada, a geladeira para de gelar a parte de baixo. Detectar isso antes do bloqueio total de gelo evita que você fique sem o aparelho. Em Itaboraí, oferecemos planos de revisão para geladeiras comerciais e domésticas, garantindo que o seu equipamento esteja sempre pronto para o combate contra o calor. A manutenção é o investimento que se paga através da economia de energia e da ausência de reparos caros de emergência.</p>
+
+                <h2>Conserto de Freezer</h2>
+                <p>O freezer é fundamental para quem armazena grandes quantidades de alimentos ou possui comércio em Itaboraí. Um freezer que para de congelar pode causar um prejuízo enorme em mercadorias. Somos especialistas no reparo de freezers horizontais e verticais, resolvendo problemas de bloqueio de gelo, falhas no termostato e vazamentos internos. Se o seu equipamento comercial parou, nosso <strong>técnico perto de você</strong> chegará rapidamente para salvar o seu estoque e o seu faturamento. Atendemos sorveterias, restaurantes e açougues com prioridade máxima, pois sabemos que cada hora conta.</p>
+                <p>Os freezers exigem um cuidado especial com a carga de gás e com o estado do compressor, que trabalha em regimes mais severos. Em Itaboraí, realizamos a troca de motores de freezer com garantia estendida e utilizamos apenas fluidos refrigerantes de alta pureza. Se o seu freezer está fazendo barulhos metálicos ou as paredes internas estão "suando", esses são sinais de que ele precisa de atenção imediata. Conte com a nossa agilidade para manter seus produtos sempre congelados e seguros para o consumo.</p>
+
+                <h2>Recarga de Gás</h2>
+                <p>O vazamento de gás é um dos defeitos mais comuns em geladeiras e freezers. Se o seu aparelho liga mas não gela, ou gela apenas em uma pequena parte, é provável que o fluido refrigerante tenha escapado por algum microfuro na tubulação. Nossa <strong>recarga de gás em Itaboraí</strong> é feita com precisão: localizamos o vazamento usando detectores eletrônicos, realizamos a solda necessária, fazemos o vácuo no sistema para remover umidade e inserimos a carga exata recomendada pelo fabricante. Esse procedimento técnico garante que o rendimento do aparelho volte a ser de 100%, como se tivesse acabado de sair da loja.</p>
+                <p>Muitos técnicos apenas "completam" o gás, o que é um erro grave. O gás não acaba por uso; se ele sumiu, há um vazamento. Colocar gás sem consertar o furo é jogar dinheiro fora, pois ele vazará novamente em poucos dias. Em Itaboraí, trabalhamos com seriedade: só fazemos a recarga após garantir que o sistema está selado. Utilizamos gases ecológicos que não agridem a camada de ozônio e garantem uma troca de calor mais eficiente, reduzindo o esforço do motor e o consumo de eletricidade. É o serviço de <strong>refrigeração em Itaboraí RJ</strong> feito com consciência e técnica.</p>
+
+                <h2>Atendimento Perto de Você</h2>
+                <p>Ser um serviço de <strong>refrigeração perto de você em Itaboraí</strong> nos permite oferecer agilidade e preços competitivos. Não cobramos deslocamentos absurdos e conhecemos cada bairro da nossa cidade. Nossa reputação foi construída atendendo vizinhos e amigos com honestidade e competência. Se você busca um técnico de confiança para a sua geladeira, conte com a nossa equipe para um serviço limpo, rápido e garantido. Estamos presentes em Manilha, Venda das Pedras, Centro e em todos os distritos, prontos para te ajudar a qualquer hora do dia ou da noite.</p>
+                <p>A proximidade física nos permite chegar à sua casa em Itaboraí muitas vezes em menos de uma hora após o seu chamado. Esse <strong>atendimento rápido</strong> é o que salva o almoço de domingo ou o estoque de um pequeno comerciante. Valorizamos o relacionamento com o cliente e buscamos sempre a solução mais econômica e duradoura. Para nós, cada geladeira consertada em Itaboraí é mais uma família que recupera sua tranquilidade. Fale conosco e comprove por que somos a assistência técnica mais recomendada da região.</p>
+
+                <div class="cta-section">
+                    <h2>Geladeira Parou de Gelar?</h2>
+                    <p>Não perca seus alimentos! Temos técnicos de plantão em Itaboraí prontos para resolver o seu problema agora mesmo. Atendimento 24h com garantia e peças originais!</p>
+                    <a href="https://wa.me/5521999999999" class="btn-whatsapp">Chamar Técnico Agora</a>
+                </div>
+
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3>Por que minha geladeira está esquentando muito nas laterais?</h3>
+                        <p>É normal que as laterais aqueçam, pois ali ficam as tubulações que dissipam o calor interno. Porém, se estiver excessivamente quente a ponto de não conseguir encostar a mão, pode indicar que o motor está trabalhando demais devido a algum defeito, falta de gás ou sujeira excessiva no condensador. Em Itaboraí, o calor externo agrava esse sintoma, exigindo uma revisão técnica.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Minha geladeira Frost Free está criando gelo no freezer, o que fazer?</h3>
+                        <p>Isso geralmente indica uma falha no sistema de degelo (resistência, bimetal ou sensores). O acúmulo de gelo impede a circulação do ar frio para a parte de baixo, fazendo com que os alimentos estraguem. Não tente descongelar com facas ou secadores; isso pode furar a tubulação. Chame um técnico especializado em Itaboraí para resolver o problema de forma segura.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quanto tempo dura o conserto de uma geladeira?</h3>
+                        <p>A maioria dos reparos comuns, como troca de sensores, carga de gás ou troca de borracha, é concluída em menos de 2 horas diretamente na sua residência em Itaboraí. Nosso objetivo é que você tenha seu aparelho funcionando perfeitamente antes mesmo da sua próxima refeição.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Vocês consertam geladeiras de marcas importadas?</h3>
+                        <p>Sim! Temos experiência com marcas como Samsung e LG, que possuem sistemas eletrônicos mais avançados. Em Itaboraí, somos um dos poucos serviços técnicos capacitados para lidar com a tecnologia Inverter dessas marcas, garantindo um diagnóstico preciso e seguro.</p>
+                    </div>
+                </div>
+
+                <div class="internal-nav">
+                    <p>Links úteis:</p>
+                    <a onclick="navigateTo('home')">Início</a>
+                    <a onclick="navigateTo('ar')">Conserto de Ar-Condicionado em Itaboraí</a>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>Refrigeração Itaboraí RJ</strong> - Especialistas em Climatização e Refrigeração Doméstica.</p>
+                <p>Atendimento Rápido 24 Horas em Itaboraí, Manilha, Venda das Pedras e Região.</p>
+                <p>Para saber mais sobre os princípios técnicos, visite a <a href="https://pt.wikipedia.org/wiki/Refrigeração" rel="nofollow" style="color: var(--accent);">página de Refrigeração na Wikipedia</a>.</p>
+            </div>
+            <p>&copy; 2026 Refrigeração Itaboraí. Todos os direitos reservados. Técnico de Refrigeração Perto de Você.</p>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5521999999999" class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32" style="width:35px; height:35px; fill:currentColor;">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.787l-2.016 7.363 7.544-1.98c2.245 1.221 4.815 1.917 7.544 1.917 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.454 0-4.748-0.627-6.751-1.728l-0.484-0.264-4.485 1.176 1.2-4.381-0.291-0.461c-1.205-1.917-1.917-4.189-1.917-6.621 0-7.363 5.989-13.333 13.333-13.333s13.333 5.989 13.333 13.333-5.989 13.333-13.333 13.333zM22.917 19.167c-0.381-0.191-2.251-1.111-2.601-1.238s-0.604-0.191-0.858 0.191c-0.254 0.381-0.985 1.238-1.207 1.492s-0.445 0.286-0.826 0.095c-0.381-0.191-1.608-0.593-3.063-1.891-1.132-1.009-1.896-2.255-2.119-2.636s-0.024-0.587 0.167-0.777c0.171-0.171 0.381-0.445 0.572-0.667s0.254-0.381 0.381-0.635c0.127-0.254 0.063-0.477-0.032-0.667s-0.858-2.065-1.176-2.828c-0.31-0.744-0.624-0.643-0.858-0.655s-0.477-0.014-0.731-0.014c-0.254 0-0.667 0.095-1.016 0.477s-1.334 1.303-1.334 3.177 1.366 3.685 1.557 3.939c0.191 0.254 2.688 4.105 6.511 5.751 0.909 0.392 1.619 0.626 2.172 0.801 0.913 0.29 1.744 0.249 2.401 0.151 0.733-0.11 2.251-0.921 2.569-1.811s0.318-1.652 0.222-1.811c-0.095-0.159-0.35-0.254-0.731-0.445z"></path>
+        </svg>
+    </a>
+
+    <script>
+        /**
+         * Lógica de Navegação entre Seções (Simulando Páginas)
+         */
+        function navigateTo(pageId) {
+            // 1. Ocultar todas as seções
+            const sections = document.querySelectorAll('.page-content');
+            sections.forEach(sec => sec.classList.remove('active'));
+
+            // 2. Mostrar a seção selecionada
+            const target = document.getElementById('page-' + pageId);
+            if (target) {
+                target.classList.add('active');
+            }
+
+            // 3. Atualizar links do menu
+            const links = document.querySelectorAll('.nav-links a');
+            links.forEach(link => link.classList.remove('active'));
+            const activeLink = document.getElementById('link-' + pageId);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
+            // 4. Atualizar SEO (Título e Descrição) dinamicamente
+            const titleTag = document.getElementById('page-title');
+            const descTag = document.getElementById('page-description');
+
+            if (pageId === 'home') {
+                titleTag.innerText = "Refrigeração em Itaboraí RJ | Atendimento Rápido 24h";
+                descTag.content = "Refrigeração em Itaboraí RJ com atendimento rápido 24h. Conserto de ar-condicionado, geladeira e freezer. Técnico perto de você. Ligue agora!";
+            } else if (pageId === 'ar') {
+                titleTag.innerText = "Conserto de Ar-Condicionado em Itaboraí RJ | Atendimento 24h";
+                descTag.content = "Conserto e manutenção de ar-condicionado em Itaboraí RJ. Técnico rápido, instalação e limpeza. Atendimento 24h.";
+            } else if (pageId === 'geladeira') {
+                titleTag.innerText = "Conserto de Geladeira em Itaboraí RJ | Técnico Rápido";
+                descTag.content = "Conserto de geladeira e freezer em Itaboraí RJ. Atendimento rápido, recarga de gás e manutenção.";
+            }
+
+            // 5. Rolar para o topo com suavidade
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Inicialização: Garantir que a home esteja ativa ao carregar
+        window.onload = () => {
+            navigateTo('home');
+        };
+    </script>
+
+</body>
+</html>
